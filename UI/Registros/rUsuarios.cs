@@ -18,9 +18,9 @@ namespace RegistroUsuarios.UI.Registros
             InitializeComponent();
         }
 
-        private usuario LlenaClase()
+        private Usuarios LlenaClase()
         {
-            usuario usuarios = new usuario();
+            Usuarios usuarios = new Usuarios();
             usuarios.UsuarioId = Convert.ToInt32(UsuarioIDnumericUpDown.Value);
             usuarios.Nombres = NombrestextBox.Text;
             usuarios.Email = EmailstextBox.Text;

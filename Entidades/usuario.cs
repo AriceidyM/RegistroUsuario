@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RegistroUsuarios.Entidades
 {
-    public class usuario
+    public class Usuarios
     {
         [Key]
         public int UsuarioId { get; set; }
@@ -18,7 +18,7 @@ namespace RegistroUsuarios.Entidades
         public string Clave { get; set; }
         public DateTime FechaIngreso { get; set; }
 
-        public usuario()
+        public Usuarios()
         {
             UsuarioId = 0;
             Nombres = string.Empty;

@@ -17,7 +17,7 @@ namespace RegistroUsuarios
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Registros());
+            Application.Run(new MainForms());
         }
     }
 }

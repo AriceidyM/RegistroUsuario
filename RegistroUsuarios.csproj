@@ -64,11 +64,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\Registros\RegistroDeUsuarios.cs">
+    <Compile Include="UI\Registros\rCargos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Registros\RegistroDeUsuarios.Designer.cs">
-      <DependentUpon>RegistroDeUsuarios.cs</DependentUpon>
+    <Compile Include="UI\Registros\rCargos.Designer.cs">
+      <DependentUpon>rCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\rUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rUsuarios.Designer.cs">
+      <DependentUpon>rUsuarios.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainForms.resx">
       <DependentUpon>MainForms.cs</DependentUpon>
@@ -81,9 +87,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI\Registros\RegistroDeUsuarios.resx">
-      <DependentUpon>RegistroDeUsuarios.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Registros\rCargos.resx">
+      <DependentUpon>rCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\rUsuarios.resx">
+      <DependentUpon>rUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -105,7 +115,14 @@
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAL\Scripts\UsuarioDb.sql" />
+    <None Include="Resources\Remove-icon.png" />
+    <None Include="Resources\remove-user-icon.png" />
+    <None Include="Resources\Save-icon.png" />
+    <None Include="Resources\new-icon.png" />
+    <None Include="Resources\buscar-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\Scripts\Scripts.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
