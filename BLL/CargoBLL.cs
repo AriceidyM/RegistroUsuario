@@ -10,16 +10,16 @@ using System.Threading.Tasks;
 
 namespace RegistroUsuarios.BLL
 {
-   public  class UsuarioBLL
+    public class CargoBLL
     {
-        public static bool Guardar(Usuarios usuarios)
+        public static bool Guardar(Cargos cargos)
         {
             bool paso = false;
             Contexto contexto = new Contexto();
 
             try
             {
-                if (contexto.usuario.Add(usuarios) != null)
+                if (contexto.cargo.Add(cargos) != null)
                 {
                     contexto.SaveChanges();
                     paso = true;
@@ -35,14 +35,14 @@ namespace RegistroUsuarios.BLL
 
         }
 
-        public static bool Modificar(Usuarios usuarios)
+        public static bool Modificar(Cargos cargos)
         {
             bool paso = false;
             Contexto contexto = new Contexto();
 
             try
             {
-                contexto.Entry(usuarios).State = EntityState.Modified;
+                contexto.Entry(cargos).State = EntityState.Modified;
                 if (contexto.SaveChanges() > 0)
                 {
                     paso = true;
@@ -64,7 +64,7 @@ namespace RegistroUsuarios.BLL
             Contexto contexto = new Contexto();
             try
             {
-                Usuarios usuario = contexto.usuario.Find(id);
+                Cargos usuario = contexto.cargo.Find(id);
 
                 if (usuario != null)
                 {
@@ -86,29 +86,29 @@ namespace RegistroUsuarios.BLL
             return paso;
         }
 
-        public static Usuarios Buscar(int id)
+        public static Cargos Buscar(int id)
         {
             Contexto contexto = new Contexto();
-            Usuarios usuarios = new Usuarios();
+            Cargos cargos = new Cargos();
             try
             {
-                usuarios = contexto.usuario.Find(id);
+                cargos = contexto.cargo.Find(id);
                 contexto.Dispose();
             }
             catch (Exception)
             {
                 throw;
             }
-            return usuarios;
+            return cargos;
         }
 
-        public static List<Usuarios> GetList(Expression<Func<Usuarios, bool>> expression)
+        public static List<Cargos> GetList(Expression<Func<Cargos, bool>> expression)
         {
-            List<Usuarios> Articulos = new List<Usuarios>();
+            List<Cargos> Articulos = new List<Cargos>();
             Contexto contexto = new Contexto();
             try
             {
-                Articulos = contexto.usuario.Where(expression).ToList();
+                Articulos = contexto.cargo.Where(expression).ToList();
                 contexto.Dispose();
             }
             catch (Exception)
@@ -119,4 +119,3 @@ namespace RegistroUsuarios.BLL
         }
     }
 }
-

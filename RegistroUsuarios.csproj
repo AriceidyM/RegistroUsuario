@@ -53,8 +53,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\CargoBLL.cs" />
     <Compile Include="BLL\UsuarioBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entidades\Cargos.cs" />
     <Compile Include="Entidades\usuario.cs" />
     <Compile Include="MainForms.cs">
       <SubType>Form</SubType>
@@ -123,6 +125,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scripts\Scripts.sql" />
+    <None Include="Resources\Remove-icon1.png" />
+    <None Include="Resources\Save-as-icon.png" />
+    <None Include="Resources\Actions-contact-new-icon.png" />
+    <None Include="Resources\Files-New-File-icon.png" />
+    <None Include="Resources\Start-Menu-Search-icon.png" />
+    <None Include="Resources\Search-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,16 +11,16 @@ using System.Windows.Forms;
 
 namespace RegistroUsuarios.UI.Registros
 {
-    public partial class Registros : Form
+    public partial class RegistroDeUsuarios : Form
     {
-        public Registros()
+        public RegistroDeUsuarios()
         {
             InitializeComponent();
         }
 
-        private Usuarios LlenaClase()
+        private usuario LlenaClase()
         {
-            Usuarios usuarios = new Usuarios();
+            usuario usuarios = new usuario();
             usuarios.UsuarioId = Convert.ToInt32(UsuarioIDnumericUpDown.Value);
             usuarios.Nombres = NombrestextBox.Text;
             usuarios.Email = EmailstextBox.Text;
@@ -98,14 +98,14 @@ namespace RegistroUsuarios.UI.Registros
             }
             else
             {
-                Usuarios usuario = LlenaClase();
+                usuario articulo = LlenaClase();
 
                 bool paso = false;
 
 
                 if (UsuarioIDnumericUpDown.Value == 0)
                 {
-                    paso = BLL.UsuarioBLL.Guardar(usuario);
+                    paso = BLL.UsuarioBLL.Guardar(articulo);
 
                 }
                 else
@@ -171,7 +171,7 @@ namespace RegistroUsuarios.UI.Registros
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(UsuarioIDnumericUpDown.Value);
-            Usuarios usuarios = BLL.UsuarioBLL.Buscar(id);
+            usuario usuarios = BLL.UsuarioBLL.Buscar(id);
 
 
 

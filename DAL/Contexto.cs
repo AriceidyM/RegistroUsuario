@@ -6,10 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace RegistroUsuarios.DAL
 {
     public class Contexto : DbContext {
-        public DbSet<usuario> usuario { get; set; }
+        public DbSet<Usuarios> usuario { get; set; }
+
+        public DbSet<Cargos> cargo { get; set; }
 
         public Contexto() : base("ConStr")
         { }
