@@ -18,7 +18,6 @@ C:\Users\Adm\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.UI.Registros.De
 C:\Users\Rosy\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.csprojAssemblyReference.cache
 C:\Users\Rosy\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.MainForms.resources
 C:\Users\Rosy\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.Properties.Resources.resources
-C:\Users\Rosy\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.UI.Registros.DescripcionrCargos.resources
 C:\Users\Rosy\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.UI.Registros.Registros.resources
 C:\Users\Rosy\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.csproj.GenerateResource.cache
 C:\Users\Rosy\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.csproj.CoreCompileInputs.cache
@@ -32,3 +31,4 @@ C:\Users\Rosy\Desktop\RegistroUsuarios\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Rosy\Desktop\RegistroUsuarios\bin\Debug\EntityFramework.xml
 C:\Users\Rosy\Desktop\RegistroUsuarios\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Rosy\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.csproj.CopyComplete
+C:\Users\Rosy\Desktop\RegistroUsuarios\obj\Debug\RegistroUsuarios.UI.Registros.RegistroCargos.resources

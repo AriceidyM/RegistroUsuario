@@ -73,6 +73,16 @@ namespace RegistroUsuarios.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Actions_contact_new_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Actions-contact-new-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buscar_icon {
             get {
                 object obj = ResourceManager.GetObject("buscar-icon", resourceCulture);
@@ -123,6 +133,16 @@ namespace RegistroUsuarios.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Remove_icon2 {
+            get {
+                object obj = ResourceManager.GetObject("Remove-icon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap remove_user_icon {
             get {
                 object obj = ResourceManager.GetObject("remove-user-icon", resourceCulture);
@@ -136,6 +156,16 @@ namespace RegistroUsuarios.Properties {
         internal static System.Drawing.Bitmap Save_as_icon {
             get {
                 object obj = ResourceManager.GetObject("Save-as-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Save_as_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Save-as-icon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,16 @@ namespace RegistroUsuarios.Properties {
         internal static System.Drawing.Bitmap Start_Menu_Search_icon {
             get {
                 object obj = ResourceManager.GetObject("Start-Menu-Search-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Start_Menu_Search_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Start-Menu-Search-icon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

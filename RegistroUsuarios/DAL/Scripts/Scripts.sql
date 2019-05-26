@@ -20,3 +20,5 @@ create table Cargos
 	cargoId int primary key identity,
 	descripcion varchar(30),
 );
+
+select *from Cargos
