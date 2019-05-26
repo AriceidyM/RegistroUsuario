@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RegistroUsuarios.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,13 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using RegistroUsuarios.Entidades;
 
 namespace RegistroUsuarios.UI.Registros
 {
-    public partial class DescripcionrCargos : Form
+    public partial class RegistroCargos : Form
     {
-        public DescripcionrCargos()
+        public RegistroCargos()
         {
             InitializeComponent();
         }
@@ -45,19 +45,17 @@ namespace RegistroUsuarios.UI.Registros
             return paso;
         }
 
-
-
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(IdnumericUpDown.Value);
-            Usuarios usuarios = BLL.UsuarioBLL.Buscar(id);
+            Cargos usuarios = BLL.CargoBLL.Buscar(id);
 
 
 
             if (usuarios != null)
             {
-                IdnumericUpDown.Value = usuarios.UsuarioId;
-                DescripcionTextBox.Text = usuarios.Nombres;
+                IdnumericUpDown.Value = usuarios.Id;
+                DescripcionTextBox.Text = usuarios.Descripcion;
 
             }
             else
@@ -72,34 +70,6 @@ namespace RegistroUsuarios.UI.Registros
         {
             IdnumericUpDown.Value = 0;
             DescripcionTextBox.Clear();
-            
-        }
-
-        private void Eliminarbutton_Click(object sender, EventArgs e)
-        {
-            if (Validar(1))
-            {
-                MessageBox.Show("El TipoID esta vacio", "Llene Campo",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            else
-            {
-                int id = Convert.ToInt32(IdnumericUpDown.Value);
-
-                if (BLL.UsuarioBLL.Eliminar(id))
-                {
-                    MessageBox.Show("Eliminado", "Bien hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    IdnumericUpDown.Value = 0;
-                    DescripcionTextBox.Clear();
-                    errorProvider.Clear();
-                }
-                else
-                {
-                    MessageBox.Show("No se puede Eliminar", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-
-            }
         }
 
         private void Guardarbutton_Click(object sender, EventArgs e)
@@ -137,6 +107,33 @@ namespace RegistroUsuarios.UI.Registros
                 {
                     MessageBox.Show("No se guardo!!", "Intente Guardar de nuevo",
                       MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+        }
+
+        private void Eliminarbutton_Click(object sender, EventArgs e)
+        {
+            if (Validar(1))
+            {
+                MessageBox.Show("El TipoID esta vacio", "Llene Campo",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                int id = Convert.ToInt32(IdnumericUpDown.Value);
+
+                if (BLL.UsuarioBLL.Eliminar(id))
+                {
+                    MessageBox.Show("Eliminado", "Bien hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    IdnumericUpDown.Value = 0;
+                    DescripcionTextBox.Clear();
+                    errorProvider.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("No se puede Eliminar", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }

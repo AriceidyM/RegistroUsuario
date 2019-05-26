@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RegistroUsuarios.UI.Registros;
 
+
 namespace RegistroUsuarios
 {
     public partial class MainForms : Form
@@ -23,6 +24,14 @@ namespace RegistroUsuarios
             Registros rUsuario = new Registros();
             rUsuario.Show();
 
+        }
+
+        private void RCarogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Registros rCargos = new Registros();
+            RegistroCargos cargos = new RegistroCargos();
+            cargos.Show();
+            
         }
     }
 }
