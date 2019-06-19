@@ -143,6 +143,16 @@ namespace RegistroUsuarios.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Remove_icon3 {
+            get {
+                object obj = ResourceManager.GetObject("Remove-icon3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap remove_user_icon {
             get {
                 object obj = ResourceManager.GetObject("remove-user-icon", resourceCulture);
